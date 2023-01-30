@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>AI Movie Picker</title>
+    <script src="javascript.js" charset="utf-8"></script>
+  </head>
+  <link rel="stylesheet" href="style.css">
+
+  <body>
+
+    <div id="front_text_div">
+
+      <div class="front_text_content">
+        <h1 style="font-weight: bold;"> MOVIE RECOMMENDATION ENGINE </h1> 
+        <h2> You can’t decide between thousands of movies available for streaming? </h2>
+        <h3>Write the movie plot you want to see and and let us do the work!</h3>
+        <br>
+        <button type="button" id="start_button" onclick="startnow_button()">Start Now</button>
+      </div> 
+      
+      <div class="front_text_content" style="visibility: hidden;">
+        <h1 style="font-weight: bold;"> MOVIE RECOMMENDATION ENGINE </h1> 
+        <h2> You can’t decide between thousands of movies available for streaming? </h2>
+        <h3>Write the movie plot you want to see and and let us do the work!</h3>
+        <br>
+        <form id="textarea" method = "post" onsubmit="return false">
+          <textarea placeholder="Write the plot here..." id="input_text_area" name="input_text_area" rows="10" cols="90" ></textarea>
+          <br>
+          <button id = "getresults_button" type = "submit" onclick="senddata()" value = "upload text">Get results</button>
+        </form>  
+      </div> 
+
+      <div class="front_text_content" style="visibility: hidden;">
+        <h1 style="font-weight: bold;"> MOVIE RECOMMENDATION ENGINE </h1> 
+        <h2> Please wait patiently while we generate the results... </h2>
+        <div class="loader"></div>
+      </div> 
+
+      <div class="front_text_content" style="visibility: hidden;">
+        <h1 style="font-weight: bold;"> MOVIE RECOMMENDATION ENGINE </h1> 
+        <h2> Recommended for you: <br> </h2>
+      </div> 
+
+    </div>
+
+    
+    <div id="bottom_text_div">
+      <div class="bottom_text_content"> 
+        <hr>
+        <span class="bottom_span1"> 35.000+ Movies</span>
+        <span class="bottom_span2"> 20 Genres</span>
+        <span class="bottom_span3"> 10.000+ Actors</span>
+        <br>
+        <span class="bottom_spaninformation">
+          <p style="font-weight: bold;">The Smart Way To Pick A Movie.<br></p>
+          <p>Watching movies is fun, but figuring out what movie to watch next is a nerve-racking experience. 
+            Endlessly scrolling through Netflix, watching trailers on YouTube, looking up IMDb ratings, wasting half an hour and still cannot decide what to watch – does this seem familiar to you? <br></p>
+          <p>Then you have landed on the right page! AI Movie Pickers recommendation engine is the answer to the question “What movie should I watch?”!
+            Your film choices are about to be simplified greatly.<br></p>
+          <p>Our ai movie picker finds the perfect movie for your mood, occasion and individual preferences in just a few minutes! 
+            Whether you’re watching a movie by yourself, joining a movie night with friends or going on a movie date with your crush – just write the plot you want to see and you will get to an awesome choice(s)!</p>
+        </span>
+      </div>
+      
+      <p></p>
+    </div>
+
+
+  </body>
+</html>
