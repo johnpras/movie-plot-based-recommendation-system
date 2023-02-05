@@ -8,7 +8,7 @@ function startnow_button(){
 }  
 
 function getmovieinfo(movieTitle) {
-    return fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=3861f60e`)
+    return fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=YOURAPIKEY`)	//your omdbapi key
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
