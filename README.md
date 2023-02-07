@@ -1,4 +1,4 @@
-<b>Content-based movie recommender<b>: it suggests similar movies based on a the plot you want to see.<br>
+<b>Content-based movie recommender</b>: it suggests similar movies based on a the plot you want to see.<br>
 How?  It compares the semantic meaning of the descriptions using cosine similarity score.<br> 
 • API intergration + omdbapi to enhance the user generated results<br> 
 (run the api file first)<br> 
